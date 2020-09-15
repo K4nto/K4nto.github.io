@@ -1,0 +1,43 @@
+body, html {
+	height: 100%;
+	margin: 0;
+}
+
+.background {
+	/* The image used */
+	background-image: url("https://live.staticflickr.com/4476/37578619812_407c6337d2_o.jpg");
+	
+	/* Full height */
+	height: 100%; 
+	
+	/* Center and scale the image nicely */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* Container holding the image and the text */
+.container {
+	position: relative;
+	text-align: center;
+	color: white;
+}
+
+/* Centered text */
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-family: Courier, monospace;
+	font-size: 48px;
+	opacity: 0.7;
+}
+
+.signature {
+	position: absolute;
+	transform: scale(0.1, 0.1);
+	top: 0px; left: 0px;
+	
+}
