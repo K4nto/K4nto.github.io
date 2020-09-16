@@ -70,7 +70,7 @@ body, html {
 
 .button_up {
 	position: absolute;
-	top:660px;
+	bottom:-45px;
 	left: 50%;
 	opacity: 0.6;
 }
