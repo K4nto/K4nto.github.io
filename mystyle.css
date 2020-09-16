@@ -3,6 +3,16 @@ body, html {
 	margin: 0;
 }
 
+#section1 {
+	height: 100%;
+	width: 100%;
+}
+
+#section2 {
+	height: 100%;
+	width: 100%;
+}
+
 .background {
 	/* The image used */
 	background-image: url("https://live.staticflickr.com/4476/37578619812_407c6337d2_o.jpg");
@@ -36,11 +46,19 @@ body, html {
 }
 
 .signature {
-	position: fixed;
-	/* transform:scale(0.05,0.05); */
+	position: absolute;
 	max-width: 10%;
 	height: auto;
 	top: 0;
 	left: 0;
 	opacity: 0.3;
+}
+
+.button_down {
+	position: fixed;
+	width: auto;
+	height: auto;
+	bottom:4px;
+	left: 50%;
+	opacity: 0.6;
 }
