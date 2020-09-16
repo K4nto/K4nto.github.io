@@ -62,10 +62,15 @@ body, html {
 }
 
 .button_down {
-	position: fixed;
-	width: auto;
-	height: auto;
-	bottom:4px;
+	position: absolute;
+	bottom:5px;
+	left: 50%;
+	opacity: 0.6;
+}
+
+.button_up {
+	position: absolute;
+	top:660px;
 	left: 50%;
 	opacity: 0.6;
 }
