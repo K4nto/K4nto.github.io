@@ -15,7 +15,7 @@ body, html {
 #section2 {
 	height: 100%;
 	width: 100%;
-	/* background-color:black; */
+	background-color:#111;
 	float:left;
 	clear:none;
 }
@@ -54,11 +54,11 @@ body, html {
 
 .signature {
 	position: absolute;
-	max-width: 10%;
-	height: auto;
+	/* max-width: 10%; */
+	/* height: auto; */
 	top: 0;
 	left: 0;
-	opacity: 0.3;
+	opacity: 0.7;
 }
 
 .button_down {
@@ -93,7 +93,8 @@ body, html {
 	background-color: #111;
 	overflow-x: hidden;
 	transition: 0.5s;
-	/* padding-top: 60px; */
+	/* opacity:0.8; */
+	padding-top: 60px;
 }
 
 .sidenav a {
