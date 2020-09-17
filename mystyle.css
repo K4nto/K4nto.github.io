@@ -1,6 +1,7 @@
 body, html {
 	height: 100%;
 	margin: 0;
+	scroll-behavior: smooth;
 }
 
 #section1 {
@@ -32,13 +33,6 @@ body, html {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-
-/* Container holding the image and the text */
-/* .container { */
-	/* position: relative; */
-	/* text-align: center; */
-	/* color: white; */
-/* } */
 
 /* Centered text */
 .centered {
@@ -83,7 +77,6 @@ body, html {
 }
 
 .sidenav {
-	position: absolute;
 	height: 100%;
 	width: 0;
 	position: fixed;
@@ -93,32 +86,44 @@ body, html {
 	background-color: #111;
 	overflow-x: hidden;
 	transition: 0.5s;
-	/* opacity:0.8; */
 	padding-top: 60px;
 }
 
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 2vw;
   color: #818181;
   display: block;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
-.sidenav a:hover {
-  color: #f1f1f1;
+.sidenav p {
+  padding: 8px 8px 8px 128px;
+  text-decoration: none;
+  font-size: 1vw;
+  color: #818181;
+  display: block;
+  transition: 0.5s;
+  position:fixed;
+  bottom:0;
 }
+
+.animated a:hover {
+  color: #f1f1f1;
+  font-size:40px;
+}
+
 
 .sidenav .closebtn {
   position: absolute;
   top: 0;
   right: 25px;
-  font-size: 36px;
+  font-size: 2.2vw;
   margin-left: 50px;
 }
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav a {font-size: 2.2vw;}
 }
