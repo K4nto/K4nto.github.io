@@ -30,18 +30,19 @@
 			}
 		</script>
 		
-		<div id="section1">
+		<div id="section1" onwheel="myFunction(event)">
 			<div class="background">
 				<div class="centered">K4nto Photograpie</div>
 			</div>
 			<div class="signature">
-				<img src="Images\KA_logo_white_small.svg">
+				<a href="#section1"><img src="Images\KA_logo_white_small.svg">
 			</div>
 			<div class="button_down">
 				<a href="#section2"><img src="Images\down-arrow-white.png"></a>
 			</div>
 		</div>
-		<div id="section2">
+
+		<div id="section2" onwheel="myFunction(event)">
 			<div class="text">
 				<h1>Welcome to an empty world.</h1>
 			</div>
@@ -49,5 +50,20 @@
 				<a href="#section1"><img src="Images\up-arrow-white.png"></a>
 			</div>
 		</div>
+		<script>
+			window.addEventListener("wheel", function(e){e.preventDefault();}, {passive: false} );
+			function myFunction(event) {
+				var y = event.deltaY;
+				console.log(y);
+				if (y>0){
+					var elmnt = document.getElementById("section2");
+					elmnt.scrollIntoView();
+				}
+				if (y<0){
+					var elmnt = document.getElementById("section1");
+					elmnt.scrollIntoView();
+				}
+			}
+		</script>
 	</body>
 </html>

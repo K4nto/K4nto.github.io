@@ -2,6 +2,7 @@ body, html {
 	height: 100%;
 	margin: 0;
 	scroll-behavior: smooth;
+	/* overflow-x: hidden; */
 }
 
 #section1 {
@@ -10,15 +11,27 @@ body, html {
 	/* background-color:black; */
 	float:left;
 	clear:none;
-	
+	overflow:scroll;
+    overflow-x:hidden;	
+	overflow-y:hidden;
 }
 
+#section1::-webkit-scrollbar {
+    width: 0px;
+}
+}
+#section2::-webkit-scrollbar {
+    width: 0px;
+}
 #section2 {
 	height: 100%;
 	width: 100%;
 	background-color:#111;
 	float:left;
 	clear:none;
+	overflow:scroll;
+    overflow-x:hidden;	
+	overflow-y:hidden;
 }
 
 .background {
@@ -47,7 +60,7 @@ body, html {
 }
 
 .signature {
-	position: absolute;
+	position: fixed;
 	/* max-width: 10%; */
 	/* height: auto; */
 	top: 0;
