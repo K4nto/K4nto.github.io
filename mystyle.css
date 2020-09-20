@@ -2,33 +2,38 @@ body, html {
 	height: 100%;
 	margin: 0;
 	scroll-behavior: smooth;
-	/* overflow-x: hidden; */
+
 }
 
 #section1 {
 	height: 100%;
 	width: 100%;
-	/* background-color:black; */
-	float:left;
-	clear:none;
+	/* Params pour enlever la séparation entre les sections (bande blanche) */
+	float:left; 
+	clear:none; 
+	
+	/* Params pour enlever la bar de scroll */
 	overflow:scroll;
     overflow-x:hidden;	
 	overflow-y:hidden;
 }
 
-#section1::-webkit-scrollbar {
+#section1::-webkit-scrollbar {  /* Params additionnels pour enlever la barre de scroll */
     width: 0px;
 }
 }
-#section2::-webkit-scrollbar {
+#section2::-webkit-scrollbar { /* Params additionnels pour enlever la barre de scroll */
     width: 0px;
 }
 #section2 {
 	height: 100%;
 	width: 100%;
-	background-color:#111;
-	float:left;
+	background-color:#111; /* couleur gris noir */
+	/* Params pour enlever la séparation entre les sections (bande blanche) */
+	float:left;  
 	clear:none;
+	
+	/* Params pour enlever la bar de scroll */
 	overflow:scroll;
     overflow-x:hidden;	
 	overflow-y:hidden;
@@ -49,14 +54,14 @@ body, html {
 
 /* Centered text */
 .centered {
-	position: relative;
+	position: relative; /* relative à la taille de la fenêtre */
 	top: 75%;
 	left: 52%;
 	transform: translate(-50%, -50%);
 	color: white;
 	font-family: Courier, monospace;
 	opacity: 0.7;
-	font-size: 3.2vw;
+	font-size: 3.2vw;  /* l'unité vw sert à garder la proportion de la font par rapport à la taille de la fenêtre */
 }
 
 .signature {
@@ -102,8 +107,8 @@ body, html {
 	padding-top: 60px;
 }
 
-.sidenav a {
-  padding: 8px 8px 8px 32px;
+.sidenav a {  /* prefixé sur a pour n'avoir d'effet que sur les liens <a href> */
+  padding: 8px 8px 8px 32px; 
   text-decoration: none;
   font-size: 2vw;
   color: #818181;
@@ -111,7 +116,7 @@ body, html {
   transition: 0.5s;
 }
 
-.sidenav p {
+.sidenav p { /* prefixé sur a pour n'avoir d'effet que sur les paragraphes <p> */
   padding: 8px 8px 8px 128px;
   text-decoration: none;
   font-size: 1vw;
@@ -122,7 +127,7 @@ body, html {
   bottom:0;
 }
 
-.animated a:hover {
+.animated a:hover { /* hover permet d'actionner les paramètres lorsque la souris est passé sur les lien <a href> de la class animated */
   color: #f1f1f1;
   font-size:40px;
 }
