@@ -55,6 +55,7 @@ body, html {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	/* filter: grayscale(1) opacity(.8); */
 }
 
 /* Centered text */
@@ -107,7 +108,7 @@ body, html {
 }
 
 
-/***************** Panel de navigation à droite ************************/
+/***************** DEBUT Panel de navigation à droite ************************/
 .sidenav {
 	height: 100%;
 	width: 0;
@@ -157,10 +158,10 @@ body, html {
   font-size: 2.2vw;
   margin-left: 50px;
 }
-/***************** Panel de navigation à droite ************************/
+/***************** FIN Panel de navigation à droite ************************/
 
 
-/**************section glitch text animation ***************/
+/**************DEBUT section glitch text animation ***************/
 @keyframes glitch{
   2%,64%{
     transform: translate(2px,0) skew(0deg);
@@ -215,8 +216,23 @@ div:after{
     transform: translate(-22px,5px) skew(21deg); 
   }
 }
-/**************section glitch text animation ***************/
+/**************FIN section glitch text animation ***************/
 
+/* #albums-selector { */
+	/* display:flex; */
+	/* justify-content:center; */
+	  /* display: inline-block; */
+  /* width: 10%; */
+  /* height: 10%; */
+  /* background-size: contain; */
+  /* background-repeat: no-repeat; */
+  /* cursor: pointer; */
+  /* transition: all 200ms ease-in; */
+  /* filter: grayscale(1) opacity(.8); */
+  /* transform:scale(0.2); */
+/* } */
+
+/**************DEBUT section affichage album ***************/
 .albums-selector {
 	display:flex;
 	justify-content:center;
@@ -236,21 +252,18 @@ div:after{
 
 .img-card:hover {
 	filter: grayscale(0) opacity(1);
-	
 }
 
 .img1 {
   background-image: url(https://live.staticflickr.com/4492/37562161756_7aaceef3fd_b.jpg)
 }
-
 .img2 {
   background-image: url(https://live.staticflickr.com/7532/29613935314_71f541c2d0_b.jpg)
 }
-
 .img3 {
   background-image: url(https://live.staticflickr.com/7561/15740388041_d8d78c5f3d_b.jpg)
 }
-
+/**************FIN section affichage album ***************/
 
 /**************section smoke text animation ***************/
 /* .smoke { */
