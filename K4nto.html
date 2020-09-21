@@ -15,14 +15,14 @@
 				<a class="text" href="#">About</a>
 				<a class="text" href="#">Contact</a>
 			</div>
-			<p class="text" href="#">Copyright©</p>
+			<p>Copyright©</p>
 		</div>
 
 		<span style="font-weight: 600;font-family: 'Cabin Sketch', cursive;opacity:0.8;color:white;font-size:1.9vw;cursor:pointer;position:absolute;top:0;right:0;" onclick="openNav()"> Open &#9776;</span>
 		
 		<script>
 			function openNav() {
-			document.getElementById("mySidenav").style.width = "225px"; /* Taille du volet latéral de navigation */
+			document.getElementById("mySidenav").style.width = "15vw"; /* Taille du volet latéral de navigation */
 			}
 			
 			function closeNav() {
@@ -43,9 +43,28 @@
 		</div>
 
 		<div id="section2" onwheel="myFunction(event)"> <!-- ajout de onwheel pour avoir les events de la roue de la souris dans la section2 -->
+			<!-- <div class="smoke"> -->
+				<!-- <span>W</span><span>e</span><span>l</span><span>c</span><span>o</span><span>m</span><span>e</span><span>&nbsp;</span><span>t</span><span>o</span><span>&nbsp;</span><span>a</span><span>n</span><span>&nbsp;</span><span>e</span><span>m</span><span>p</span><span>t</span><span>y</span><span>&nbsp;</span><span>w</span><span>o</span><span>r</span><span>l</span><span>d</span><span>.</span> -->
 			<div class="text">
-				<h1>Welcome to an empty world.</h1>
+				<p>Welcome to an empty world.</p>
+				<p>- Zombie Walk -</p>
+				<p> Paris </p>
 			</div>
+			<!-- <div id="albums-selector"> -->
+				<!-- <div id="album"> -->
+					<!-- <img src="https://live.staticflickr.com/4492/37562161756_7aaceef3fd_b.jpg" class="hover" /> -->
+					<!-- <p class="text">text</p> -->
+				<!-- </div> -->
+			<!-- </div>  -->
+			<div class="albums-selector">
+				<id="ZW2017" name="image" value="ZW2017">
+					<label for="ZW2017" class="img-card img1"></label>
+				<id="ZW2016" name="image" value="ZW2016">
+					<label for="ZW2016" class="img-card img2"></label>
+				<id="ZW2014" name="image" value="ZW2014">
+					<label for="ZW2014" class="img-card img3"></label>
+			</div>
+			
 			<div class="button_up">
 				<a href="#section1"><img src="Images\up-arrow-white.png"></a>
 			</div>

@@ -5,9 +5,10 @@ body, html {
 
 }
 
+@import "compass/css3";
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 2.2vw;}
+  .sidenav a {font-size: 2vw;}
 }
 #section1 {
 	height: 100%;
@@ -65,7 +66,7 @@ body, html {
 	font-family: 'Cabin Sketch', cursive;
 	opacity: 0.7;
 	font-size: 3.2vw;  /* l'unité vw sert à garder la proportion de la font par rapport à la taille de la fenêtre */
-	animation: glitch 2s linear infinite;
+	animation: glitch 1.5s linear infinite;
 }
 
 .signature {
@@ -92,11 +93,74 @@ body, html {
 .text{
 	color: white;
 	opacity: 0.8;
-	font-family: 'Cabin Sketch', cursive;
-	font-size: 2vw;
+	font-family: Courier, monospace;
+	font-size: 1.8vw;
+	
+  
+}
+.text p {
+	color: white;
+	opacity: 0.8;
+	font-family:'Cabin Sketch', cursive;
+	font-size:4vw;
+	text-align:center;
+}
+
+
+/***************** Panel de navigation à droite ************************/
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	background-color: #111;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+}
+
+.sidenav a {  /* prefixé sur a pour n'avoir d'effet que sur les liens <a href> */
+  padding: 8px 8px 8px 32px; 
+  text-decoration: none;
+  font-size: 2vw;
+  color: #818181;
+  display: block;
+  transition: 0.5s;
+}
+
+.sidenav p { /* prefixé sur a pour n'avoir d'effet que sur les paragraphes <p> */
+  font-family:Courier, monospace;
+  padding: 8px 8px 8px 128px;
+  text-decoration: none;
+  font-size: 1vw;
+  color: #818181;
+  display: flex;
+  transition: 0.5s;
+  /* position:fixed; */
+  /* bottom:0; */
+  justify-content: flex-end;
+  /* align-items:flex-end; */
   
 }
 
+.animated a:hover { /* hover permet d'actionner les paramètres lorsque la souris est passé sur les lien <a href> de la class animated */
+  color: #f1f1f1;
+  font-size:40px;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 2.2vw;
+  margin-left: 50px;
+}
+/***************** Panel de navigation à droite ************************/
+
+
+/**************section glitch text animation ***************/
 @keyframes glitch{
   2%,64%{
     transform: translate(2px,0) skew(0deg);
@@ -134,7 +198,7 @@ div:before{
   }
 }
 
-.div:after{
+div:after{
   animation: glitchBotom 1.5s linear infinite;
   clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
   -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
@@ -151,51 +215,101 @@ div:before{
     transform: translate(-22px,5px) skew(21deg); 
   }
 }
+/**************section glitch text animation ***************/
 
-.sidenav {
-	height: 100%;
-	width: 0;
-	position: fixed;
-	z-index: 1;
-	top: 0;
-	right: 0;
-	background-color: #111;
-	overflow-x: hidden;
-	transition: 0.5s;
-	padding-top: 60px;
+.albums-selector {
+	display:flex;
+	justify-content:center;
 }
 
-.sidenav a {  /* prefixé sur a pour n'avoir d'effet que sur les liens <a href> */
-  padding: 8px 8px 8px 32px; 
-  text-decoration: none;
-  font-size: 2vw;
-  color: #818181;
-  display: block;
-  transition: 0.5s;
-}
-
-.sidenav p { /* prefixé sur a pour n'avoir d'effet que sur les paragraphes <p> */
-  padding: 8px 8px 8px 128px;
-  text-decoration: none;
-  font-size: 1vw;
-  color: #818181;
-  display: block;
-  transition: 0.5s;
-  position:fixed;
-  bottom:0;
-}
-
-.animated a:hover { /* hover permet d'actionner les paramètres lorsque la souris est passé sur les lien <a href> de la class animated */
-  color: #f1f1f1;
-  font-size:40px;
+.img-card {
+  display: inline-block;
+  width: 450px;
+  height: 400px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: all 200ms ease-in;
+  filter: grayscale(1) opacity(.8);
 }
 
 
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 2.2vw;
-  margin-left: 50px;
+.img-card:hover {
+	filter: grayscale(0) opacity(1);
+	
 }
 
+.img1 {
+  background-image: url(https://live.staticflickr.com/4492/37562161756_7aaceef3fd_b.jpg)
+}
+
+.img2 {
+  background-image: url(https://live.staticflickr.com/7532/29613935314_71f541c2d0_b.jpg)
+}
+
+.img3 {
+  background-image: url(https://live.staticflickr.com/7561/15740388041_d8d78c5f3d_b.jpg)
+}
+
+
+/**************section smoke text animation ***************/
+/* .smoke { */
+	/* color: white; */
+	/* display: flex; */
+	/* opacity: 0.8; */
+	/* justify-content: center; */
+	/* align-items:center;	 */
+	/* font-family:'Cabin Sketch', cursive; */
+	/* font-size:5vw; */
+	/* text-align:center; */
+	/* backface-visibility: hidden; */
+	/* overflow:scroll; */
+    /* overflow-x:hidden;	 */
+	/* overflow-y:hidden; */
+/* } */
+
+/* span { */
+  /* display: inline-block; */
+  /* text-shadow: 0 0 0 whitesmoke; */
+  /* animation: smoky 5s 3s both; */
+/* } */
+
+/* span:nth-child(even){ */
+  /* animation-name: smoky-mirror; */
+/* } */
+
+/* @keyframes smoky { */
+  /* 60% { */
+    /* text-shadow: 0 0 40px whitesmoke; */
+  /* } */
+  /* to { */
+    /* transform: */
+      /* translate3d(15rem,-8rem,0) */
+      /* rotate(-40deg) */
+      /* skewX(70deg) */
+      /* scale(1.5); */
+    /* text-shadow: 0 0 20px whitesmoke; */
+    /* opacity: 0; */
+  /* } */
+/* } */
+
+/* @keyframes smoky-mirror { */
+  /* 60% { */
+    /* text-shadow: 0 0 40px whitesmoke; } */
+  /* to { */
+    /* transform: */
+      /* translate3d(18rem,-8rem,0) */
+      /* rotate(-40deg)  */
+      /* skewX(-70deg) */
+      /* scale(2); */
+     /* text-shadow: 0 0 20px whitesmoke; */
+    /* opacity: 0; */
+  /* } */
+/* } */
+
+/* @for $item from 1 through 21 { */
+  /* span:nth-of-type(#{$item}){  */
+    /* animation-delay: #{(3 + ($item/10))}s;  */
+  /* } */
+/* }  */
+/**************section smoke text animation ***************/
