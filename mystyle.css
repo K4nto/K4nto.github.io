@@ -33,8 +33,10 @@ body, html {
 #section2 {
 	height: 100%;
 	width: 100%;
-	background-color:#111; /* couleur gris noir */
+	background-color:#111; /* couleur gris noir */ 
 	/* Params pour enlever la séparation entre les sections (bande blanche) */
+	/* background: rgb(91,91,91); */
+/* background: linear-gradient(90deg, rgba(91,91,91,1) 0%, #111 100%); */
 	float:left;  
 	clear:none;
 	
@@ -42,6 +44,18 @@ body, html {
 	overflow:scroll;
     overflow-x:hidden;	
 	overflow-y:hidden;
+}
+.line_left {
+	position:absolute;
+	border-left: 1px solid rgba(186, 186, 186, .1);
+	height: 100%;
+	left:33%
+}
+.line_right {
+	position:absolute;
+	border-left: 1px solid rgba(186, 186, 186, .1);
+	height: 100%;
+	right:33%
 }
 
 .background {
