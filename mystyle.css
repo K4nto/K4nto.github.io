@@ -83,6 +83,7 @@ body, html {
 	opacity: 0.7;
 	font-size: 3.2vw;  /* l'unité vw sert à garder la proportion de la font par rapport à la taille de la fenêtre */
 	animation: glitch 1.5s linear infinite;
+	cursor:default;
 }
 
 .header {
@@ -111,8 +112,7 @@ body, html {
 	opacity: 0.8;
 	font-family: Courier, monospace;
 	font-size: 1.8vw;
-	
-  
+	cursor:default;
 }
 .text p {
 	color: white;

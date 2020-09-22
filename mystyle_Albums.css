@@ -1,0 +1,143 @@
+body {
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+    /* --line-offset: calc((10vh + 8px) / 2); */
+}
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	opacity: 0.7;
+}
+
+.text{
+	
+	color: white;
+	opacity: 0.8;
+	font-family: Courier, monospace;
+	font-size: 1.8vw;
+}
+.text p {
+	position:fixed;
+	color: white;
+	opacity: 0.8;
+	font-family:'Cabin Sketch', cursive;
+	font-size:1.5vw;
+	writing-mode: vertical-rl;
+	text-orientation: upright;
+	cursor:default;
+	top: 15.5%;
+}
+
+.switch{
+	position:absolute;
+	opacity: 0.4;
+	bottom: 50%;
+	right:2%;
+}
+
+.zig-zag-left { 
+position: fixed;
+border: none; 
+width: 30%; 
+margin: auto; 
+bottom: 50px;
+height: 30px; 
+background: linear-gradient(135deg, #111 30%, transparent 25%) -20px 0, linear-gradient(225deg, #111 30%, transparent 25%) -20px 0, linear-gradient(315deg, #111 30%, transparent 25%), linear-gradient(45deg, #111 30%, transparent 25%); 
+background-size: 30px 30px; 
+background-color: grey;
+opacity:0.2;
+}
+
+.zig-zag-right { 
+position: fixed;
+border: none; 
+width: 30%; 
+margin: auto; 
+right:0px;
+bottom: 50px;
+height: 30px; 
+background: linear-gradient(135deg, #111 30%, transparent 25%) -20px 0, linear-gradient(225deg, #111 30%, transparent 25%) -20px 0, linear-gradient(315deg, #111 30%, transparent 25%), linear-gradient(45deg, #111 30%, transparent 25%); 
+background-size: 30px 30px; 
+background-color: grey;
+opacity:0.2;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 5fr 1fr;
+    background: #111;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    display: flex;
+}
+
+.tab {
+	width: calc(10vh + 5px);
+    height: calc(10vh + 5px);
+    position: relative;
+	bottom:-20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(0% 0%, 0% 50%, 100% 100%, 100% 50%);
+    shape-outside: polygon(0% 0%, 0% 50%, 100% 100%, 100% 50%);
+    z-index: 0;
+    transition: width 0.5s;
+	opacity:0.8;
+}
+
+.tab img {
+    width: 10vh;
+    height: 10vh;
+    z-index: 10;
+    cursor: pointer;
+    clip-path: polygon(0% 0%, 0% 50%, 100% 100%, 100% 50%);
+    shape-outside: polygon(0% 0%, 0% 50%, 100% 100%, 100% 50%);
+    transition: width 0.5s;
+}
+
+[type=radio] {
+    display: none;   
+}
+
+.tab:hover {
+	opacity:1;
+}
+
+[type=radio]:checked ~ label ~ .content{
+    text-align: center;
+    z-index: 8;
+}
+
+
+[type=radio]:checked ~ label .tab{
+    width: 0;
+}
+
+.content {
+    position: absolute;
+    /* background: #021919; */
+    top: 7vh;
+    left: 10vh;
+	/* right:7vh; */
+    width: 90vw;
+    height: 75vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.content img {
+    height: auto;
+    width: 100vw;  
+}
