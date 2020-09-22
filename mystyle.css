@@ -26,6 +26,7 @@ body, html {
 #section1::-webkit-scrollbar {  /* Params additionnels pour enlever la barre de scroll */
     width: 0px;
 }
+
 }
 #section2::-webkit-scrollbar { /* Params additionnels pour enlever la barre de scroll */
     width: 0px;
@@ -84,7 +85,7 @@ body, html {
 	animation: glitch 1.5s linear infinite;
 }
 
-.signature {
+.header {
 	position: fixed;
 	top: 0;
 	left: 0;
