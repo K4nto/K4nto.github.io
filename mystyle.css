@@ -48,13 +48,13 @@ body, html {
 }
 .line_left {
 	position:absolute;
-	border-left: 1px solid rgba(186, 186, 186, .1);
+	border-left: 1.5px solid rgba(186, 186, 186, .1);
 	height: 100%;
 	left:33%
 }
 .line_right {
 	position:absolute;
-	border-left: 1px solid rgba(186, 186, 186, .1);
+	border-left: 1.5px solid rgba(186, 186, 186, .1);
 	height: 100%;
 	right:33%
 }

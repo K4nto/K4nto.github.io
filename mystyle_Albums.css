@@ -24,24 +24,32 @@ body {
 	color: white;
 	opacity: 0.8;
 	font-family:'Cabin Sketch', cursive;
-	font-size:1.5vw;
+	font-size:1.7vw;
 	writing-mode: vertical-rl;
 	text-orientation: upright;
 	cursor:default;
 	top: 15.5%;
+	left:2%;
 }
 
-.switch{
+.switch_right{
 	position:absolute;
 	opacity: 0.4;
 	bottom: 50%;
-	right:2%;
+	right:7%;
+}
+
+.switch_left{
+	position:absolute;
+	opacity: 0.4;
+	bottom: 50%;
+	left:7%;
 }
 
 .zig-zag-left { 
 position: fixed;
 border: none; 
-width: 30%; 
+width: 26%; 
 margin: auto; 
 bottom: 50px;
 height: 30px; 
@@ -54,7 +62,7 @@ opacity:0.2;
 .zig-zag-right { 
 position: fixed;
 border: none; 
-width: 30%; 
+width: 26%; 
 margin: auto; 
 right:0px;
 bottom: 50px;
@@ -127,11 +135,11 @@ ul {
 .content {
     position: absolute;
     /* background: #021919; */
-    top: 7vh;
-    left: 10vh;
+    top: 5vh;
+    left: 28vh;
 	/* right:7vh; */
-    width: 90vw;
-    height: 75vh;
+    width: 70vw;
+    height: 80vh;
     overflow: hidden;
     display: flex;
     align-items: center;
