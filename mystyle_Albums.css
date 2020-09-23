@@ -134,11 +134,9 @@ ul {
 
 .content {
     position: absolute;
-    /* background: #021919; */
     top: 5vh;
     left: 28vh;
-	/* right:7vh; */
-    width: 70vw;
+    width: 69vw;
     height: 80vh;
     overflow: hidden;
     display: flex;
