@@ -12,13 +12,23 @@ body {
 	opacity: 0.7;
 }
 
+.copyright{
+	position:absolute;
+	color: white;
+	opacity: 0.4;
+	font-family: Courier, monospace;
+	font-size: 1vw;
+	bottom:1%;
+	right:1.4%;
+}
+
 .text{
-	
 	color: white;
 	opacity: 0.8;
 	font-family: Courier, monospace;
 	font-size: 1.8vw;
 }
+
 .text p {
 	position:fixed;
 	color: white;
@@ -30,6 +40,20 @@ body {
 	cursor:default;
 	top: 15.5%;
 	left:2%;
+}
+
+.line_left {
+	position:absolute;
+	border-left: 1px solid rgba(186, 186, 186, .1);
+	height: 100%;
+	left:4.7%
+}
+
+.line_right {
+	position:absolute;
+	border-left: 1px solid rgba(186, 186, 186, .1);
+	height: 100%;
+	right:4.7%
 }
 
 .switch_right{
@@ -46,32 +70,32 @@ body {
 	left:7%;
 }
 
-.zig-zag-left { 
-position: fixed;
-border: none; 
-width: 26%; 
-margin: auto; 
-bottom: 50px;
-height: 30px; 
-background: linear-gradient(135deg, #111 30%, transparent 25%) -20px 0, linear-gradient(225deg, #111 30%, transparent 25%) -20px 0, linear-gradient(315deg, #111 30%, transparent 25%), linear-gradient(45deg, #111 30%, transparent 25%); 
-background-size: 30px 30px; 
-background-color: grey;
-opacity:0.2;
-}
+/* .zig-zag-left {  */
+	/* position: fixed; */
+	/* border: none;  */
+	/* width: 26%;  */
+	/* margin: auto;  */
+	/* bottom: 50px; */
+	/* height: 30px;  */
+	/* background: linear-gradient(135deg, #111 30%, transparent 25%) -20px 0, linear-gradient(225deg, #111 30%, transparent 25%) -20px 0, linear-gradient(315deg, #111 30%, transparent 25%), linear-gradient(45deg, #111 30%, transparent 25%);  */
+	/* background-size: 30px 30px;  */
+	/* background-color: grey; */
+	/* opacity:0.2; */
+/* } */
 
-.zig-zag-right { 
-position: fixed;
-border: none; 
-width: 26%; 
-margin: auto; 
-right:0px;
-bottom: 50px;
-height: 30px; 
-background: linear-gradient(135deg, #111 30%, transparent 25%) -20px 0, linear-gradient(225deg, #111 30%, transparent 25%) -20px 0, linear-gradient(315deg, #111 30%, transparent 25%), linear-gradient(45deg, #111 30%, transparent 25%); 
-background-size: 30px 30px; 
-background-color: grey;
-opacity:0.2;
-}
+/* .zig-zag-right {  */
+	/* position: fixed; */
+	/* border: none;  */
+	/* width: 26%;  */
+	/* margin: auto;  */
+	/* right:0px; */
+	/* bottom: 50px; */
+	/* height: 30px;  */
+	/* background: linear-gradient(135deg, #111 30%, transparent 25%) -20px 0, linear-gradient(225deg, #111 30%, transparent 25%) -20px 0, linear-gradient(315deg, #111 30%, transparent 25%), linear-gradient(45deg, #111 30%, transparent 25%);  */
+	/* background-size: 30px 30px;  */
+	/* background-color: grey; */
+	/* opacity:0.2; */
+/* } */
 
 .container {
     width: 100vw;

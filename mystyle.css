@@ -52,11 +52,23 @@ body, html {
 	height: 100%;
 	left:33%
 }
+.line_left_left {
+	position:absolute;
+	border-left: 1.5px solid rgba(186, 186, 186, .1);
+	height: 100%;
+	left:4.7%
+}
 .line_right {
 	position:absolute;
 	border-left: 1.5px solid rgba(186, 186, 186, .1);
 	height: 100%;
 	right:33%
+}
+.line_right_right {
+	position:absolute;
+	border-left: 1.5px solid rgba(186, 186, 186, .1);
+	height: 100%;
+	right:4.7%
 }
 
 .background {
@@ -96,14 +108,14 @@ body, html {
 .button_down {
 	position: absolute;
 	bottom:5px;
-	left: 50%;
-	opacity: 0.6;
+	left: 49%;
+	opacity: 0.6; 
 }
 
 .button_up {
 	position: absolute;
 	bottom:-45px;
-	left: 50%;
+	left: 49%;
 	opacity: 0.6;
 }
 
