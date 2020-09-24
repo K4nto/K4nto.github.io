@@ -73,7 +73,7 @@ body, html {
 
 .background {
 	/* The image used */
-	background-image: url("Images/BW_sans-logo.jpg");
+	background-image: url("Images/background_color.jpg");
 	
 	/* Full height */
 	height: 100%; 
